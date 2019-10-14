@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "config": ["./src/config/index.ts"],
+      "api/*": ["./src/api/*"],
+      "definitions/*": ["./src/definitions/*"],
+      "common/*": ["./src/common/*"],
+      "stores": ["./src/stores/index.ts"],
+      "stores/*": ["./src/stores/*"],
+      "utils/*": ["./src/utils/*"]
+    }
+  }
+}

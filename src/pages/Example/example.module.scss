@@ -1,0 +1,39 @@
+.exampleContainer {
+  text-align: center;
+
+  .item {
+    padding: 10px;
+    height: 150px;
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    .title {
+      color: gray;
+      span {
+        color: #0366d6;
+        font-size: 20px;
+      }
+    }
+
+    .description {
+      height: 80px;
+      display: -webkit-box;
+      overflow: hidden;
+      white-space: pre-line;
+      text-overflow: ellipsis;
+      span {
+        color: gray;
+        font-size: 16px;
+      }
+    }
+
+    .info {
+      display: baseline;
+      width: 90%;
+      span,
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Prompt');
+
+$font-path: '/static/fonts/';
+$font-kanit-path: '#{$font-path}Kanit/Kanit';
+ 
+@font-face {
+  font-family: 'Kanit';
+  src: url('#{$font-kanit-path}-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('#{$font-kanit-path}-Medium.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('#{$font-kanit-path}-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('#{$font-kanit-path}-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('#{$font-kanit-path}-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+ 
+
+@mixin font-default {
+  font-family: 'Kanit', sans-serif;
+}
+ 
+ 
