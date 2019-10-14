@@ -10,6 +10,7 @@ interface IRepositoriesProp {
   star: number;
   forks: number;
   language: string;
+  htmlUrl : string;
 }
 
 interface IRepositoriesState {}
@@ -19,12 +20,12 @@ export class Repositories extends React.Component<
   IRepositoriesState
 > {
   render() {
-    const { title, description, star, forks, language } = this.props;
+    const { title, description, star, forks, language,htmlUrl } = this.props;
     return (
       <Grid item md={6} xs={12}>
         <div className={css.item}>
           <div className={css.title}>
-            <GitHub fontSize="small" /> <span>{title}</span>
+            <GitHub fontSize="small" /> <a href={htmlUrl} target="_blank">{title}</a>
           </div>
           <div className={css.description}>
             <span>{description}</span>
