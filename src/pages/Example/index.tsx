@@ -48,6 +48,7 @@ export class ExamplePage extends React.Component<
                     language={item.language}
                     star={item.stargazersCount}
                     forks={item.forksCount}
+                    htmlUrl ={item.htmlUrl}
                   />
                 );
               })}

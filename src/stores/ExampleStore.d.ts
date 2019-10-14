@@ -6,6 +6,7 @@ export interface IExampleModel {
   stargazersCount: any;
   forksCount: any;
   language: string;
+  htmlUrl : string;
 }
 
 export interface IExampleStore {

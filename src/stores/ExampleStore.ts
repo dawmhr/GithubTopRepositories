@@ -18,6 +18,7 @@ export class ExampleStore implements IExampleStore {
       forksCount: 0,
       language: '',
       stargazersCount: 0,
+      htmlUrl: ''
     };
     this.infos = [] as IExampleModel[];
     this.hasMoreRepo = true;
