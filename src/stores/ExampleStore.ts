@@ -48,6 +48,10 @@ export class ExampleStore implements IExampleStore {
   getInfosJs() {
     return toJS(this.infos);
   }
+
+  getHasMoreRepoJs() {
+    return toJS(this.hasMoreRepo);
+  }
 }
 
 export default new ExampleStore();

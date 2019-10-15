@@ -25,6 +25,7 @@ export class ExamplePage extends React.Component<
 
   render() {
     const data = this.props.example.getInfosJs();
+    const hasMore = this.props.example.getHasMoreRepoJs();
     return (
       <div className={css.exampleContainer}>
         <Container>
@@ -32,7 +33,7 @@ export class ExamplePage extends React.Component<
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadItems.bind(this)}
-            hasMore={true || false}
+            hasMore={hasMore}
             loader={
               // <Loader key={0}/>
               <span key={0}>Loading...</span>
